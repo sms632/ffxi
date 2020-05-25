@@ -1,0 +1,17 @@
+sets.exported={
+    main="Naegling",
+    sub="Tauret",
+    ammo="Ginsen",
+    head="Malignance Chapeau",
+    body="Ayanmo Corazza +2",
+    hands={ name="Taeon Gloves", augments={'Accuracy+24','"Dual Wield"+5','STR+7 VIT+7',}},
+    legs="Aya. Cosciales +1",
+    feet={ name="Taeon Boots", augments={'Attack+15','"Dual Wield"+5','Sklchn.dmg.+3%',}},
+    neck="Clotharius Torque",
+    waist="Windbuffet Belt",
+    left_ear="Suppanomimi",
+    right_ear="Brutal Earring",
+    left_ring="Petrov Ring",
+    right_ring="Rajas Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','AGI+2','"Mag.Atk.Bns."+1','DEF+6',}},
+}

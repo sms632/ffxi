@@ -1,0 +1,16 @@
+sets.exported={
+    main={ name="Espiritus", augments={'Enmity-6','Pet: "Mag.Atk.Bns."+30','Pet: Damage taken -4%',}},
+    sub="Elan Strap",
+    ammo="Seraphicaller",
+    head="Con. Horn +1",
+    body="Con. Doublet +1",
+    hands="Con. Bracers +1",
+    legs={ name="Apogee Slacks +1", augments={'Pet: STR+20','Blood Pact Dmg.+14','Pet: "Dbl. Atk."+4',}},
+    feet={ name="Apogee Pumps +1", augments={'Pet: Attack+25','Pet: "Mag.Atk.Bns."+25','Blood Pact Dmg.+8',}},
+    neck="Caller's Pendant",
+    waist="Lucidity Sash",
+    left_ear="Evans Earring",
+    right_ear="Gifted Earring",
+    right_ring="Dim. Ring (Mea)",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','AGI+2','"Mag.Atk.Bns."+1','DEF+6',}},
+}

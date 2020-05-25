@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Tizona", augments={'DMG:+1',}},
+    sub="Naegling",
+    ammo="Ghastly Tathlum +1",
+    head="Malignance Chapeau",
+    body="Jhakri Robe +2",
+    hands="Malignance Gloves",
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+7','Phys. dmg. taken -3%','"Refresh"+1','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    neck="Clotharius Torque",
+    waist="Fucho-no-Obi",
+    left_ear="Friomisi Earring",
+    right_ear="Hermetic Earring",
+    left_ring="Defending Ring",
+    right_ring="Warp Ring",
+    back="Solemnity Cape",
+}

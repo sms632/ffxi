@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Nibiru Cudgel", augments={'MP+28','INT+6','"Mag.Atk.Bns."+7',}},
+    sub={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
+    ammo="Ghastly Tathlum +1",
+    head="Malignance Chapeau",
+    body="Ayanmo Corazza +2",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Aya. Cosciales +1",
+    feet={ name="Herculean Boots", augments={'Accuracy+7','Phys. dmg. taken -3%','"Refresh"+1','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    neck="Clotharius Torque",
+    waist="Fucho-no-Obi",
+    left_ear="Friomisi Earring",
+    right_ear="Hermetic Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+    back="Solemnity Cape",
+}

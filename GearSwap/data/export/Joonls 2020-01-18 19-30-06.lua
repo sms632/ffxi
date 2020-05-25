@@ -1,0 +1,17 @@
+sets.exported={
+    main="Kaja Knife",
+    sub={ name="Taming Sari", augments={'STR+10','DEX+10','DMG:+15','"Treasure Hunter"+1',}},
+    ammo="Charis Feather",
+    head="Mummu Bonnet +1",
+    body={ name="Herculean Vest", augments={'Accuracy+13','"Triple Atk."+4','Attack+5',}},
+    hands="Meghanada Gloves",
+    legs={ name="Herculean Trousers", augments={'Weapon skill damage +3%','DEX+9','Accuracy+10',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+30','"Triple Atk."+3','AGI+4','Attack+1',}},
+    neck="Shadow Gorget",
+    waist="Fotia Belt",
+    left_ear="Pixie Earring",
+    right_ear="Brutal Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Mummu Ring",
+    back={ name="Senuna's Mantle", augments={'DEX+5','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}},
+}

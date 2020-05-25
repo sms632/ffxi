@@ -1,0 +1,18 @@
+sets.exported={
+    main="Kaja Sword",
+    sub="Kaja Knife",
+    range={ name="Doomsday", augments={'"Mag.Atk.Bns."+19','"Store TP"+6','STR+16 AGI+16',}},
+    ammo="Eminent Bullet",
+    head="Pixie Hairpin +1",
+    body="Meg. Cuirie +2",
+    hands="Meghanada Gloves",
+    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+24','Weapon skill damage +3%','Mag. Acc.+12',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+7','Phys. dmg. taken -3%','"Refresh"+1','Mag. Acc.+19 "Mag.Atk.Bns."+19',}},
+    neck="Shadow Gorget",
+    waist="Fotia Belt",
+    left_ear="Friomisi Earring",
+    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    left_ring="Petrov Ring",
+    right_ring="Rajas Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','AGI+2','"Mag.Atk.Bns."+1','DEF+6',}},
+}

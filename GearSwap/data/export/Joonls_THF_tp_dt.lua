@@ -1,0 +1,17 @@
+sets.exported={
+    main="Kaja Knife",
+    sub={ name="Taming Sari", augments={'STR+10','DEX+10','DMG:+15','"Treasure Hunter"+1',}},
+    ammo="Falcon Eye",
+    head="Malignance Chapeau",
+    body="Meg. Cuirie +2",
+    hands={ name="Herculean Gloves", augments={'Accuracy+20','"Triple Atk."+3','STR+7','Attack+14',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+13 Attack+13','"Triple Atk."+3','Accuracy+8',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+30','"Triple Atk."+3','AGI+4','Attack+1',}},
+    neck="Twilight Torque",
+    waist="Chaac Belt",
+    left_ear="Suppanomimi",
+    right_ear="Brutal Earring",
+    left_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    back="Solemnity Cape",
+}

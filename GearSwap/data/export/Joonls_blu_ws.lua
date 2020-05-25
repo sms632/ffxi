@@ -1,0 +1,17 @@
+sets.exported={
+    main="Naegling",
+    sub={ name="Nibiru Blade", augments={'DEX+10','Accuracy+20','Mag. Acc.+15',}},
+    ammo="Falcon Eye",
+    head={ name="Herculean Helm", augments={'Accuracy+17 Attack+17','"Triple Atk."+3','Accuracy+2','Attack+9',}},
+    body={ name="Herculean Vest", augments={'Accuracy+13','"Triple Atk."+4','Attack+5',}},
+    hands="Jhakri Cuffs +1",
+    legs="Jhakri Slops +2",
+    feet="Thereoid Greaves",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Mache Earring",
+    right_ear="Ishvara Earring",
+    left_ring="Epona's Ring",
+    right_ring="Petrov Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Damage taken-5%',}},
+}

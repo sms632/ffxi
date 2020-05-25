@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
+    sub="Culminus",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head={ name="Merlinic Hood", augments={'Rng.Atk.+4','Pet: DEX+14','"Refresh"+2',}},
+    body="Jhakri Robe +2",
+    hands="Geo. Mitaines +1",
+    legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+    feet="Jhakri Pigaches +2",
+    neck="Twilight Torque",
+    waist="Hachirin-no-Obi",
+    left_ear="Handler's Earring +1",
+    right_ear="Handler's Earring",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+    back="Solemnity Cape",
+}

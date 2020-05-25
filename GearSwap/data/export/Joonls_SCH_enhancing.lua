@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Nibiru Staff", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-5',}},
+    sub="Enki Strap",
+    ammo="Sapience Orb",
+    head={ name="Telchine Cap", augments={'Mag. Evasion+12','"Conserve MP"+1','Enh. Mag. eff. dur. +7',}},
+    body={ name="Telchine Chas.", augments={'Mag. Evasion+4','"Cure" spellcasting time -6%','Enh. Mag. eff. dur. +8',}},
+    hands="Arbatel Bracers +1",
+    legs={ name="Telchine Braconi", augments={'"Mag.Atk.Bns."+10','"Regen"+2','Enh. Mag. eff. dur. +9',}},
+    feet={ name="Telchine Pigaches", augments={'Evasion+2','Enmity-4','Enh. Mag. eff. dur. +10',}},
+    neck="Incanter's Torque",
+    waist="Siegel Sash",
+    left_ear="Loquac. Earring",
+    right_ear="Barkaro. Earring",
+    left_ring="Weather. Ring",
+    right_ring="Prolix Ring",
+    back={ name="Bookworm's Cape", augments={'INT+4','MND+2','"Regen" potency+9',}},
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Daybreak",
+    sub="Culminus",
+    ammo="Ghastly Tathlum +1",
+    head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +9','CHR+5','"Mag.Atk.Bns."+14',}},
+    body="Ea Houppelande",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Ea Slops",
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','INT+9','"Mag.Atk.Bns."+10',}},
+    neck="Mizu. Kubikazari",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Static Earring",
+    left_ring="Mujin Band",
+    right_ring="Jhakri Ring",
+    back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+5','Damage taken-5%',}},
+}

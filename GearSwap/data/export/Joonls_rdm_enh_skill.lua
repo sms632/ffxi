@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Crocea Mors", augments={'Path: C',}},
+    sub="Tauret",
+    range="Kaja Bow",
+    head={ name="Viti. Chapeau +1", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+    body={ name="Vitiation Tabard", augments={'Enhances "Chainspell" effect',}},
+    hands={ name="Vitiation Gloves", augments={'Enhancing Magic duration',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet="Leth. Houseaux",
+    neck="Incanter's Torque",
+    waist="Windbuffet Belt",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Loquac. Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Warp Ring",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+}

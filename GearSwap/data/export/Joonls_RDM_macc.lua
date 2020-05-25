@@ -1,0 +1,17 @@
+sets.exported={
+    main="Daybreak",
+    sub="Culminus",
+    ammo="Ghastly Tathlum +1",
+    head="Malignance Chapeau",
+    body="Jhakri Robe +2",
+    hands={ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
+    legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
+    neck="Incanter's Torque",
+    waist="Eschan Stone",
+    left_ear="Hermetic Earring",
+    right_ear="Gwati Earring",
+    left_ring="Weather. Ring",
+    right_ring="Jhakri Ring",
+    back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+5','Damage taken-5%',}},
+}

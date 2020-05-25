@@ -1,0 +1,15 @@
+sets.exported={
+    ammo="Ghastly Tathlum +1",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs="Jhakri Slops +2",
+    feet="Jhakri Pigaches +2",
+    neck="Clotharius Torque",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Hermetic Earring",
+    left_ring="Acumen Ring",
+    right_ring="Jhakri Ring",
+    back="Solemnity Cape",
+}

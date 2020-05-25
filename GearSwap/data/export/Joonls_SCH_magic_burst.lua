@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Nibiru Staff", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-5',}},
+    sub="Enki Strap",
+    ammo="Ghastly Tathlum +1",
+    head="Jhakri Coronal +2",
+    body="Jhakri Robe +2",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+8%','Mag. Acc.+3',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','INT+9','"Mag.Atk.Bns."+10',}},
+    neck="Mizu. Kubikazari",
+    waist="Refoccilation Stone",
+    left_ear="Barkaro. Earring",
+    right_ear="Static Earring",
+    left_ring="Jhakri Ring",
+    right_ring="Mujin Band",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+2','"Mag.Atk.Bns."+10',}},
+}

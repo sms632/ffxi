@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Espiritus", augments={'Enmity-6','Pet: "Mag.Atk.Bns."+30','Pet: Damage taken -4%',}},
+    sub="Elan Strap",
+    ammo="Sancus Sachet +1",
+    head={ name="Telchine Cap", augments={'Mag. Evasion+12','"Elemental Siphon"+25','Enh. Mag. eff. dur. +7',}},
+    body={ name="Telchine Chas.", augments={'"Elemental Siphon"+25','CHR+3',}},
+    hands={ name="Telchine Gloves", augments={'"Elemental Siphon"+30',}},
+    legs={ name="Telchine Braconi", augments={'"Mag.Atk.Bns."+10','"Elemental Siphon"+35','Enh. Mag. eff. dur. +9',}},
+    feet={ name="Telchine Pigaches", augments={'Evasion+2','"Elemental Siphon"+35','Enh. Mag. eff. dur. +10',}},
+    neck="Caller's Pendant",
+    waist="Ligeia Sash",
+    left_ear="Evans Earring",
+    right_ear="Gelos Earring",
+    left_ring="Evoker's Ring",
+    right_ring="Stikini Ring",
+    back={ name="Conveyance Cape", augments={'Summoning magic skill +2','Pet: Enmity+14','Blood Pact Dmg.+4','Blood Pact ab. del. II -3',}},
+}

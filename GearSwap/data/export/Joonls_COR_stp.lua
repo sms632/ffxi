@@ -1,0 +1,18 @@
+sets.exported={
+    main="Kaja Sword",
+    sub="Kaja Knife",
+    range={ name="Doomsday", augments={'"Mag.Atk.Bns."+19','"Store TP"+6','STR+16 AGI+16',}},
+    ammo="Eminent Bullet",
+    head="Malignance Chapeau",
+    body="Mummu Jacket +1",
+    hands="Malignance Gloves",
+    legs={ name="Samnuha Tights", augments={'STR+9','DEX+8','"Dbl.Atk."+2','"Triple Atk."+2',}},
+    feet="Mummu Gamash. +1",
+    neck="Marked Gorget",
+    waist="Eschan Stone",
+    left_ear="Suppanomimi",
+    right_ear="Brutal Earring",
+    left_ring="Petrov Ring",
+    right_ring="Rajas Ring",
+    back={ name="Gunslinger's Cape", augments={'Enmity-2','"Mag.Atk.Bns."+3','"Phantom Roll" ability delay -4',}},
+}

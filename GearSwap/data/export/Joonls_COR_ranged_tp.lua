@@ -1,0 +1,18 @@
+sets.exported={
+    main="Kaja Sword",
+    sub="Kaja Knife",
+    range={ name="Doomsday", augments={'"Mag.Atk.Bns."+19','"Store TP"+6','STR+16 AGI+16',}},
+    ammo="Eminent Bullet",
+    head="Malignance Chapeau",
+    body="Mummu Jacket +1",
+    hands="Meghanada Gloves",
+    legs={ name="Samnuha Tights", augments={'STR+9','DEX+8','"Dbl.Atk."+2','"Triple Atk."+2',}},
+    feet="Meg. Jambeaux",
+    neck="Shadow Gorget",
+    waist="Eschan Stone",
+    left_ear="Dedition Earring",
+    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    left_ring="Arewe Ring",
+    right_ring="Paqichikaji Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','AGI+2','"Mag.Atk.Bns."+1','DEF+6',}},
+}

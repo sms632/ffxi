@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Nibiru Staff", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-5',}},
+    sub="Enki Strap",
+    ammo="Sapience Orb",
+    head="Nahtirah Hat",
+    body={ name="Merlinic Jubbah", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Fast Cast"+3','CHR+10','Mag. Acc.+14',}},
+    hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -2%',}},
+    legs={ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}},
+    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+21','"Fast Cast"+6','CHR+8','Mag. Acc.+6',}},
+    neck="Incanter's Torque",
+    waist="Witful Belt",
+    left_ear="Loquac. Earring",
+    right_ear="Barkaro. Earring",
+    left_ring="Weather. Ring",
+    right_ring="Prolix Ring",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+2','"Mag.Atk.Bns."+10',}},
+}

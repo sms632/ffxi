@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Aettir", augments={'Accuracy+70','Mag. Evasion+50','Weapon skill damage +10%',}},
+    sub="Bloodrain Strap",
+    ammo="Ginsen",
+    head={ name="Herculean Helm", augments={'Accuracy+17 Attack+17','"Triple Atk."+3','Accuracy+2','Attack+9',}},
+    body={ name="Herculean Vest", augments={'Accuracy+13','"Triple Atk."+4','Attack+5',}},
+    hands={ name="Herculean Gloves", augments={'Accuracy+20','"Triple Atk."+3','STR+7','Attack+14',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+13 Attack+13','"Triple Atk."+3','Accuracy+8',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+30','"Triple Atk."+3','AGI+4','Attack+1',}},
+    neck="Clotharius Torque",
+    waist="Windbuffet Belt",
+    left_ear="Dedition Earring",
+    right_ear="Ishvara Earring",
+    left_ring="Rajas Ring",
+    right_ring="Petrov Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','AGI+2','"Mag.Atk.Bns."+1','DEF+6',}},
+}

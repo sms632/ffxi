@@ -1,0 +1,17 @@
+sets.exported={
+    main="Tizona",
+    sub="Naegling",
+    ammo="Ginsen",
+    head={ name="Herculean Helm", augments={'Accuracy+17 Attack+17','"Triple Atk."+3','Accuracy+2','Attack+9',}},
+    body={ name="Herculean Vest", augments={'"Snapshot"+4','DEX+6','Quadruple Attack +3','Accuracy+16 Attack+16','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    hands={ name="Herculean Gloves", augments={'Accuracy+20','"Triple Atk."+3','STR+7','Attack+14',}},
+    legs={ name="Herculean Trousers", augments={'Crit.hit rate+5','STR+3','Accuracy+6',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+30','"Triple Atk."+3','AGI+4','Attack+1',}},
+    neck="Clotharius Torque",
+    waist="Windbuffet Belt",
+    left_ear="Brutal Earring",
+    right_ear="Suppanomimi",
+    left_ring="Epona's Ring",
+    right_ring="Petrov Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10','Damage taken-5%',}},
+}

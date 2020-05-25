@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Espiritus", augments={'Enmity-6','Pet: "Mag.Atk.Bns."+30','Pet: Damage taken -4%',}},
+    sub="Elan Strap",
+    ammo="Seraphicaller",
+    head={ name="Helios Band", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Pet: "Dbl. Atk."+6','Blood Pact Dmg.+6',}},
+    body="Con. Doublet +1",
+    hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+23 Pet: "Mag.Atk.Bns."+23','Blood Pact Dmg.+6','Pet: STR+10','Pet: Mag. Acc.+1','Pet: "Mag.Atk.Bns."+14',}},
+    legs="Con. Spats +1",
+    feet="Tali'ah Crackows +1",
+    neck="Incanter's Torque",
+    waist="Lucidity Sash",
+    left_ear="Evans Earring",
+    right_ear="Gifted Earring",
+    left_ring="Varar Ring",
+    right_ring="Varar Ring",
+    back={ name="Campestres's Cape", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20',}},
+}

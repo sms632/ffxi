@@ -1,0 +1,17 @@
+sets.exported={
+    main="Kaja Knife",
+    sub={ name="Taming Sari", augments={'STR+10','DEX+10','DMG:+15','"Treasure Hunter"+1',}},
+    ammo="Falcon Eye",
+    head="Malignance Chapeau",
+    body="Meg. Cuirie +2",
+    hands="Maxixi Bangles +2",
+    legs="Mummu Kecks +1",
+    feet={ name="Herculean Boots", augments={'Accuracy+30','"Triple Atk."+3','AGI+4','Attack+1',}},
+    neck="Subtlety Spec.",
+    waist="Anguinus Belt",
+    left_ear="Mache Earring",
+    right_ear="Steelflash Earring",
+    left_ring="Rajas Ring",
+    right_ring="Mummu Ring",
+    back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
+}

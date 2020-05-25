@@ -1,0 +1,15 @@
+sets.exported={
+    main="Perun +1",
+    sub="Dullahan Shield",
+    range="Annihilator",
+    ammo="Eradicating Bullet",
+    head="Orion Beret +2",
+    body="Amini Caban +1",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
+    feet="Meg. Jam. +2",
+    neck={ name="Scout's Gorget +1", augments={'Path: A',}},
+    left_ring="Rajas Ring",
+    right_ring="Warp Ring",
+    back={ name="Belenus's Cape", augments={'"Snapshot"+10',}},
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main="Tizona",
+    sub="Naegling",
+    ammo="Falcon Eye",
+    head={ name="Herculean Helm", augments={'Accuracy+17 Attack+17','"Triple Atk."+3','Accuracy+2','Attack+9',}},
+    body="Abnoba Kaftan",
+    hands="Jhakri Cuffs +2",
+    legs={ name="Samnuha Tights", augments={'STR+9','DEX+8','"Dbl.Atk."+2','"Triple Atk."+2',}},
+    feet="Thereoid Greaves",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Petrov Ring",
+    right_ring="Epona's Ring",
+    back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
+}

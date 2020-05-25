@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Nibiru Staff", augments={'MP+80','"Mag.Atk.Bns."+25','Enmity-5',}},
+    sub="Enki Strap",
+    ammo="Homiliary",
+    head={ name="Merlinic Hood", augments={'Rng.Atk.+4','Pet: DEX+14','"Refresh"+2',}},
+    body="Jhakri Robe +2",
+    hands={ name="Chironic Gloves", augments={'Sklchn.dmg.+3%','STR+4','"Treasure Hunter"+2',}},
+    legs={ name="Merlinic Shalwar", augments={'Spell interruption rate down -7%','Pet: VIT+3','"Refresh"+2',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
+    neck="Twilight Torque",
+    waist="Fucho-no-Obi",
+    left_ear="Static Earring",
+    right_ear="Loquac. Earring",
+    left_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+    right_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+32%','AGI+2','"Mag.Atk.Bns."+1','DEF+6',}},
+}

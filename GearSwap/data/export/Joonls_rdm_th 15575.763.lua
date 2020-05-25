@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Crocea Mors", augments={'Path: C',}},
+    sub="Tauret",
+    ammo="Homiliary",
+    head="Wh. Rarab Cap +1",
+    body="Jhakri Robe +2",
+    hands={ name="Chironic Gloves", augments={'Sklchn.dmg.+3%','STR+4','"Treasure Hunter"+2',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet="Aya. Gambieras +2",
+    neck="Twilight Torque",
+    waist="Chaac Belt",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Loquac. Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Defending Ring",
+    back={ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+}

@@ -1,0 +1,16 @@
+sets.exported={
+    main="Bolelabunga",
+    sub={ name="Genbu's Shield", augments={'"Cure" potency +1%','Mag. Acc.+2',}},
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +1",
+    body="Jhakri Robe +2",
+    hands="Geo. Mitaines +1",
+    legs={ name="Merlinic Shalwar", augments={'Spell interruption rate down -7%','Pet: VIT+3','"Refresh"+2',}},
+    feet="Battlecast Gaiters",
+    neck="Incanter's Torque",
+    left_ear="Handler's Earring",
+    right_ear="Handler's Earring +1",
+    left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -5%','Magic dmg. taken -3%',}},
+    right_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+    back={ name="Lifestream Cape", augments={'Geomancy Skill +8','Indi. eff. dur. +19','Pet: Damage taken -5%',}},
+}
