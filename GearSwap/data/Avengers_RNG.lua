@@ -82,7 +82,7 @@ function user_setup()
     state.WeaponskillMode:options('Normal', 'Acc')
     state.IdleMode:options('Normal', 'DT')
 
-    state.WeaponSet = M{['description']='Weapon Set', 'Annihilator', 'Fomalhaut', 'Armageddon'}
+    state.WeaponSet = M{['description']='Weapon Set', 'Gastraphetes', 'Annihilator', 'Fomalhaut', 'Armageddon'}
     state.CP = M(false, "Capacity Points Mode")
 
     DefaultAmmo = {['Yoichinoyumi'] = "Chrono Arrow",
@@ -90,7 +90,7 @@ function user_setup()
                    ['Fail-Not'] = "Chrono Arrow",
                    ['Annihilator'] = "Eradicating Bullet",
                    ['Armageddon'] = "Eradicating Bullet",
-                   ['Gastraphetes'] = "Quelling Bolt",
+                   ['Gastraphetes'] = "Eminent Bolt",
                    ['Fomalhaut'] = "Eradicating Bullet",
                    }
 
@@ -99,8 +99,8 @@ function user_setup()
                    ['Fail-Not'] = "Yoichi's Arrow",
                    ['Annihilator'] = "Eradicating Bullet",
                    ['Armageddon'] = "Eradicating Bullet",
-                   ['Gastraphetes'] = "Quelling Bolt",
-                   ['Fomalhaut'] = "Devastating Bullet",
+                   ['Gastraphetes'] = "Eminent Bolt",
+                   ['Fomalhaut'] = "Eradicating Bullet",
                    }
 
     WSAmmo = {     ['Yoichinoyumi'] = "Chrono Arrow",
@@ -108,17 +108,17 @@ function user_setup()
                    ['Fail-Not'] = "Chrono Arrow",
                    ['Annihilator'] = "Eradicating Bullet",
                    ['Armageddon'] = "Eradicating Bullet",
-                   ['Gastraphetes'] = "Quelling Bolt",
+                   ['Gastraphetes'] = "Eminent Bolt",
                    ['Fomalhaut'] = "Eradicating Bullet",
                    }
 
     MagicAmmo = {  ['Yoichinoyumi'] = "Chrono Arrow",
                    ['Gandiva'] = "Chrono Arrow",
                    ['Fail-Not'] = "Chrono Arrow",
-                   ['Annihilator'] = "Devastating Bullet",
-                   ['Armageddon'] = "Devastating Bullet",
-                   ['Gastraphetes'] = "Quelling Bolt",
-                   ['Fomalhaut'] = "Devastating Bullet",
+                   ['Annihilator'] = "Eradicating Bullet",
+                   ['Armageddon'] = "Eradicating Bullet",
+                   ['Gastraphetes'] = "Eminent Bolt",
+                   ['Fomalhaut'] = "Eradicating Bullet",
                    }
 
     -- Additional local binds
@@ -282,17 +282,17 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.precast.WS = {
-		head="Orion Beret +2",
-		body="Meg. Cuirie +1",
+		head="Orion Beret +3",
+		body={ name="Arc. Jerkin +3", augments={'Enhances "Snapshot" effect',}},
 		hands="Meg. Gloves +2",
 		legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
-		feet="Meg. Jam. +2",
+		feet={ name="Arcadian Socks +3", augments={'Enhances "Stealth Shot" effect',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
-		left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-		right_ear="Ishvara Earring",
-		left_ring="Rajas Ring",
-		right_ring="Apate Ring",
+		left_ear="Ishvara Earring",
+		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+		left_ring="Apate Ring",
+		right_ring="Rajas Ring",
 		back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
@@ -315,7 +315,7 @@ function init_gear_sets()
         })
 
     sets.precast.WS['Jishnu\'s Radiance'].Acc = set_combine(sets.precast.WS['Jishnu\'s Radiance'], {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.precast.WS["Last Stand"] = set_combine(sets.precast.WS, {
@@ -323,7 +323,7 @@ function init_gear_sets()
         })
 
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.precast.WS["Coronach"] = set_combine(sets.precast.WS['Last Stand'], {
@@ -332,31 +332,31 @@ function init_gear_sets()
         })
 
     sets.precast.WS["Coronach"].Acc = set_combine(sets.precast.WS['Coronach'], {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.precast.WS["Trueflight"] = {
-			head="Orion Beret +2",
-			body={ name="Herculean Vest", augments={'Mag. Acc.+18','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
-			hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
-			legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
-			feet="Malignance Boots",
-			neck={ name="Scout's Gorget +1", augments={'Path: A',}},
-			waist="Eschan Stone",
-			left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-			right_ear="Friomisi Earring",
-			left_ring="Acumen Ring",
-			right_ring="Rajas Ring",
-			back={ name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},
-		}
+		head={ name="Herculean Helm", augments={'Enmity+3','Accuracy+25','Phalanx +3','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+		body={ name="Herculean Vest", augments={'"Fast Cast"+5','Attack+7','Quadruple Attack +1','Accuracy+1 Attack+1','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+		hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+		legs={ name="Herculean Trousers", augments={'Accuracy+23','Pet: "Mag.Atk.Bns."+26','Magic burst dmg.+5%','Accuracy+11 Attack+11','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+		feet={ name="Herculean Boots", augments={'STR+9','"Mag.Atk.Bns."+30','Mag. Acc.+6 "Mag.Atk.Bns."+6',}},
+		neck="Fotia Gorget",
+		waist="Fotia Belt",
+		left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+		right_ear="Ishvara Earring",
+		left_ring="Rajas Ring",
+		right_ring="Acumen Ring",
+		back={ name="Belenus's Cape", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
+	}
 
     sets.precast.WS["Wildfire"] = set_combine(sets.precast.WS["Trueflight"], {
-			--nothing to add
+			-- nothing to add
 		})
 
     sets.precast.WS['Evisceration'] = {
 		head="Malignance Chapeau",
-		body="Meg. Cuirie +1",
+		body="Meg. Cuirie +2",
 		hands="Malignance Gloves",
 		legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
 		feet="Malignance Boots",
@@ -370,12 +370,12 @@ function init_gear_sets()
 	}
 
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {
-			--nothing to add
+			-- nothing to add
         })
 	
 	sets.precast.WS['Savage Blade'] = {
 		head="Malignance Chapeau",
-		body="Meg. Cuirie +1",
+		body="Meg. Cuirie +2",
 		hands="Malignance Gloves",
 		legs={ name="Arc. Braccae +3", augments={'Enhances "Eagle Eye Shot" effect',}},
 		feet="Malignance Boots",
@@ -389,7 +389,7 @@ function init_gear_sets()
 	}
 
     sets.precast.WS['Rampage'] = set_combine(sets.precast.WS['Evisceration'], {
-			--nothing to add
+			-- nothing to add
 		})
     sets.precast.WS['Rampage'].Acc = sets.precast.WS['Evisceration'].Acc
 
@@ -428,19 +428,19 @@ function init_gear_sets()
 	}
 
     sets.midcast.RA.Acc = set_combine(sets.midcast.RA, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.midcast.RA.HighAcc = set_combine(sets.midcast.RA.Acc, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.midcast.RA.Critical = set_combine(sets.midcast.RA, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.midcast.RA.STP = set_combine(sets.midcast.RA, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.DoubleShot = {
@@ -448,7 +448,7 @@ function init_gear_sets()
         }
 
     sets.DoubleShot.Critical = {
-			--nothing to add
+			-- nothing to add
         }
 
 
@@ -510,7 +510,7 @@ function init_gear_sets()
 
     sets.engaged = {
 		head="Malignance Chapeau",
-		body="Meg. Cuirie +1",
+		body="Meg. Cuirie +2",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
@@ -541,7 +541,7 @@ function init_gear_sets()
     -- No Magic Haste (74% DW to cap)
     sets.engaged.DW = {
 		head="Malignance Chapeau",
-		body="Meg. Cuirie +1",
+		body="Meg. Cuirie +2",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
@@ -569,7 +569,7 @@ function init_gear_sets()
     -- 15% Magic Haste (67% DW to cap)
     sets.engaged.DW.LowHaste = {
 		head="Malignance Chapeau",
-		body="Meg. Cuirie +1",
+		body="Meg. Cuirie +2",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
@@ -583,82 +583,82 @@ function init_gear_sets()
 	}
 
     sets.engaged.DW.LowAcc.LowHaste = set_combine(sets.engaged.DW.LowHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.MidAcc.LowHaste = set_combine(sets.engaged.DW.LowAcc.LowHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.HighAcc.LowHaste = set_combine(sets.engaged.DW.MidAcc.LowHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.STP.LowHaste = set_combine(sets.engaged.DW.LowHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     -- 30% Magic Haste (56% DW to cap)
     sets.engaged.DW.MidHaste = {
-			--nothing to add
+			-- nothing to add
       }
 
     sets.engaged.DW.LowAcc.MidHaste = set_combine(sets.engaged.DW.MidHaste, {
-			--nothing to add
+			-- nothing to add
 		})
 
     sets.engaged.DW.MidAcc.MidHaste = set_combine(sets.engaged.DW.LowAcc.MidHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.HighAcc.MidHaste = set_combine(sets.engaged.DW.MidAcc.MidHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.STP.MidHaste = set_combine(sets.engaged.DW.MidHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     -- 35% Magic Haste (51% DW to cap)
     sets.engaged.DW.HighHaste = {
-			--nothing to add
+			-- nothing to add
       }
 
     sets.engaged.DW.LowAcc.HighHaste = set_combine(sets.engaged.DW.HighHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.MidAcc.HighHaste = set_combine(sets.engaged.DW.LowAcc.HighHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.HighAcc.HighHaste = set_combine(sets.engaged.DW.MidAcc.HighHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.STP.HighHaste = set_combine(sets.engaged.DW.HighHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     -- 45% Magic Haste (36% DW to cap)
     sets.engaged.DW.MaxHaste = {
-			--nothing to add
+			-- nothing to add
         }
 
     sets.engaged.DW.LowAcc.MaxHaste = set_combine(sets.engaged.DW.MaxHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.MidAcc.MaxHaste = set_combine(sets.engaged.DW.LowAcc.MaxHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.HighAcc.MaxHaste = set_combine(sets.engaged.DW.MidAcc.MaxHaste, {
-			--nothing to add
+			-- nothing to add
 		})
 
     sets.engaged.DW.STP.MaxHaste = set_combine(sets.engaged.DW.MaxHaste, {
-			--nothing to add
+			-- nothing to add
         })
 
     sets.engaged.DW.MaxHastePlus = set_combine(sets.engaged.DW.MaxHaste, {})
@@ -673,7 +673,7 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.engaged.Hybrid = {
-        --nothing to add
+        -- nothing to add
         }
 
     sets.engaged.DT = set_combine(sets.engaged, sets.engaged.Hybrid)
@@ -728,7 +728,7 @@ function init_gear_sets()
     sets.buff.Camouflage 		= {body="Orion Jerkin +2"}
 
     sets.buff.Doom = {
-			--nothing to add
+			-- nothing to add
         }
 
     sets.FullTP 		= {ear1="Crematio Earring"}
@@ -1108,9 +1108,9 @@ function check_ammo(spell, action, spellMap, eventArgs)
             end
         end
     end
-    if player.equipment.ammo ~= 'empty' and player.inventory[player.equipment.ammo].count < 15 then
-        add_to_chat(39,"*** Ammo '"..player.inventory[player.equipment.ammo].shortname.."' running low! *** ("..player.inventory[player.equipment.ammo].count..")")
-    end
+    -- if player.equipment.ammo ~= 'empty' and player.inventory[player.equipment.ammo].count < 15 then
+    --    add_to_chat(39,"*** Ammo '"..player.inventory[player.equipment.ammo].shortname.."' running low! *** ("..player.inventory[player.equipment.ammo].count..")")
+    --end
 end
 
 function update_offense_mode()

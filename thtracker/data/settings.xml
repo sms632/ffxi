@@ -45,6 +45,12 @@
             </stroke>
         </text>
     </global>
+    <assemble>
+        <pos>
+            <x>963</x>
+            <y>131</y>
+        </pos>
+    </assemble>
     <joonls>
         <pos>
             <x>2379</x>

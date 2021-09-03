@@ -45,13 +45,29 @@
             </text>
         </display>
     </global>
+    <ashby>
+        <display>
+            <pos>
+                <x>94</x>
+                <y>-1</y>
+            </pos>
+        </display>
+    </ashby>
+    <assemble>
+        <display>
+            <pos>
+                <x>697</x>
+            </pos>
+        </display>
+    </assemble>
     <avengers>
         <display>
             <pos>
-                <x>1</x>
+                <x>18</x>
+                <y>27</y>
             </pos>
             <text>
-                <blue>128</blue>
+                <red>128</red>
             </text>
         </display>
     </avengers>

@@ -49,18 +49,34 @@
             </text>
         </text_box_settings>
     </global>
+    <ashby>
+        <text_box_settings>
+            <pos>
+                <x>810</x>
+                <y>-3</y>
+            </pos>
+        </text_box_settings>
+    </ashby>
+    <assemble>
+        <text_box_settings>
+            <pos>
+                <x>175</x>
+                <y>1</y>
+            </pos>
+        </text_box_settings>
+    </assemble>
     <avengers>
         <text_box_settings>
             <pos>
-                <x>53</x>
-                <y>-2</y>
+                <x>468</x>
+                <y>-62</y>
             </pos>
         </text_box_settings>
     </avengers>
     <joonls>
         <text_box_settings>
             <pos>
-                <x>195</x>
+                <x>1132</x>
                 <y>-1</y>
             </pos>
         </text_box_settings>

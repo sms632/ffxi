@@ -6,4 +6,13 @@
         <mode>whitelist</mode>
         <whitelist />
     </global>
+    <joonls>
+        <whitelist>Angelis</whitelist>
+    </joonls>
+	<avengers>
+        <whitelist>Joonls</whitelist>
+    </avengers>
+	<assemble>
+        <whitelist>Joonls</whitelist>
+    </assemble>
 </settings>

@@ -17,19 +17,19 @@
         <display>
             <bg>
                 <alpha>200</alpha>
-                <blue>0</blue>
+                <blue>35</blue>
                 <green>0</green>
                 <red>0</red>
                 <visible>true</visible>
             </bg>
             <flags>
-                <bold>false</bold>
+                <bold>true</bold>
                 <bottom>false</bottom>
                 <draggable>true</draggable>
                 <italic>false</italic>
                 <right>false</right>
             </flags>
-            <padding>0</padding>
+            <padding>3</padding>
             <pos>
                 <x>500</x>
                 <y>100</y>
@@ -45,7 +45,7 @@
                 </fonts>
                 <green>255</green>
                 <red>255</red>
-                <size>10</size>
+                <size>12</size>
                 <stroke>
                     <alpha>255</alpha>
                     <blue>0</blue>
@@ -62,14 +62,51 @@
         <sbcolor>204</sbcolor>
         <showallidps>true</showallidps>
         <showfellow>true</showfellow>
-        <visible>false</visible>
+        <visible>true</visible>
     </global>
+    <ashby>
+        <visible>false</visible>
+    </ashby>
+    <assemble>
+        <display>
+            <bg>
+                <blue>0</blue>
+            </bg>
+            <pos>
+                <x>947</x>
+                <y>237</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
+        <visible>false</visible>
+    </assemble>
+    <avengers>
+        <display>
+            <bg>
+                <blue>0</blue>
+            </bg>
+            <pos>
+                <x>745</x>
+                <y>47</y>
+            </pos>
+            <text>
+                <size>10</size>
+            </text>
+        </display>
+        <visible>false</visible>
+    </avengers>
     <joonls>
         <display>
             <pos>
-                <x>1993</x>
-                <y>219</y>
+                <x>385</x>
+                <y>64</y>
             </pos>
         </display>
+        <visible>false</visible>
     </joonls>
+    <tenken>
+        <visible>false</visible>
+    </tenken>
 </settings>

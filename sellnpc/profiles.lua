@@ -5,6 +5,8 @@ local profiles = {}
 profiles['powder'] = S{
     'prize powder',
 	'Acheron shield',
+	'Azouph Greens',
+	'Yellow Txt. Dye',
     }
 
 -- //sellnpc ore
@@ -12,6 +14,11 @@ profiles['ore'] = S{
     'iron ore',
     'copper ore',
     'tin ore',
+    }
+
+-- //sellnpc crystals
+profiles['crystals'] = S{
+    'fire crystal'
     }
 
 -- //sellnpc junk
@@ -23,8 +30,6 @@ profiles['junk'] = S{
 	'mahogany log',
 	'ebony log',
 	'thokcha ore',
-	'gold ore',
-	'phrygian ore',
 	'durium ore',
 	'phoenix feather',
 	'granite',
@@ -33,7 +38,6 @@ profiles['junk'] = S{
 	'fiendish skin',
 	'ancient beast horn',
 	'jacaranda log',
-	'platinum ore',
 	'jadeite',
 	'aquamarine',
 	'painite',
@@ -56,7 +60,6 @@ profiles['junk'] = S{
 	'mythril ingot',
 	'durium sheet',
 	'wyvern scales',
-	'coral fragment',
 	'khimaira mane',
 	'petrified log'
 	}

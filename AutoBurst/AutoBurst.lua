@@ -15,7 +15,7 @@ local AssistedPlayer = "" -- IF LEFT BLANK IT WILL SCAN THE PARTY FOR A MEMBER E
 burstMagic = {
         -- LEVEL 3  and 4
         ["radiance"] = "Thunder",
-        ["light"] = "Thunder",
+        ["light"] = "Fire",
         ["umbra"] = "Blizzard",
         ["darkness"] = "Blizzard",
         -- LEVEL 2
@@ -37,6 +37,7 @@ burstMagic = {
 tierOrder = {
     [1] = "II",
     [2] = "I",
+	[3] = "II",
 }
 
 BurstJobs = S{
@@ -44,7 +45,8 @@ BurstJobs = S{
     'SCH',
     'BLM',
     'GEO',
-	'SMN'
+	'SMN',
+	'WHM'
 }
 
 -- ASPIR WILL BE USED WHEN CURRENT MP IS BELOW THE DEFINED AMOUNT

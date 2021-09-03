@@ -60,6 +60,7 @@ include('organizer-lib') -- optional
 res = require('resources')
 texts = require('texts')
 include('Modes.lua')
+include('organizer-lib')
 
 -- Define your modes: 
 -- You can add or remove modes in the table below, they will get picked up in the cycle automatically. 
@@ -79,8 +80,8 @@ nukeModes = M('normal', 'acc')
 -- cast and we revert to idle or engaged sets, we'll be checking the following for weapon selection. 
 -- Defaults are the first in each list
 
-mainWeapon = M('Crocea Mors', 'Naegling', 'Kaja Rod')
-subWeapon = M('Tauret', 'Machaera +3', 'Daybreak', 'Sors Shield', 'Ammurapi Shield')
+mainWeapon = M('Crocea Mors', 'Naegling', 'Maxentius', 'Tauret')
+subWeapon = M('Tauret', 'Machaera +2', 'Ternion Dagger +1', 'Demersal Degen +1', 'Daybreak', 'Maxentius', 'Sors Shield', 'Ammurapi Shield')
 ------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------
@@ -93,7 +94,7 @@ CP_CAPE = "Mecisto. Mantle" -- Put your CP cape here
 -- Setting this to true will stop the text spam, and instead display modes in a UI.
 -- Currently in construction.
 use_UI = true
-hud_x_pos = 2000    --important to update these if you have a smaller screen
+hud_x_pos = 1800    --important to update these if you have a smaller screen
 hud_y_pos = 800     --important to update these if you have a smaller screen
 hud_draggable = true
 hud_font_size = 14
@@ -111,6 +112,7 @@ hud_font = 'Impact'
 	windower.send_command('bind ^f8 gs c toggle subweapon')		-- CTRL-F8 Toggle sub Weapon.
 	windower.send_command('bind !` input /ws "Sanguine Blade" <t>') 		-- Alt-` Sanguine Blade Shortcut.
 	windower.send_command('bind !q input /ws "Seraph Blade" <t>') 			-- Alt-q Seraph Blade Shortcut.
+	windower.send_command('bind !w input /ws "Savage Blade" <t>') 			-- Alt-w Savage Blade Shortcut.
 	windower.send_command('bind home gs c nuke enspellup')		-- Home Cycle Enspell Up
 	windower.send_command('bind PAGEUP gs c nuke enspelldown')  -- PgUP Cycle Enspell Down
 	windower.send_command('bind ^f10 gs c toggle mb')           -- F10 toggles Magic Burst Mode on / off.
@@ -170,7 +172,7 @@ function get_sets()
 
 	-- Fill this with your own JSE. 
     --Atrophy
-    AF.Head		=	"Atro.Chapeau +2"
+    AF.Head		=	"Atro. Chapeau +2"
     AF.Body		=	"Atrophy Tabard +3"
     AF.Hands	=	"Atrophy Gloves +2"
     AF.Legs		=	"Atrophy Tights +2"
@@ -178,14 +180,14 @@ function get_sets()
 
     --Vitiation
     RELIC.Head		=	"Viti. Chapeau +2"
-    RELIC.Body		=	"Viti. Tabard +1"
-    RELIC.Hands 	=	"Viti. Gloves"
+    RELIC.Body		=	"Viti. Tabard +3"
+    RELIC.Hands 	=	"Viti. Gloves +1"
     RELIC.Legs		=	"Viti. Tights +2"
-    RELIC.Feet		=	"Vitiation Boots"
+    RELIC.Feet		=	"Viti. Boots +2"
 
     --Lethargy
-    EMPY.Head		=	"Leth. Chappel"
-    EMPY.Body		=	"Lethargy Sayon"
+    EMPY.Head		=	"Leth. Chappel +1"
+    EMPY.Body		=	"Lethargy Sayon +1"
     EMPY.Hands		=	"Leth. Gantherots +1"
     EMPY.Legs		=	"Leth. Fuseau +1"
     EMPY.Feet		=	"Leth. Houseaux +1"
@@ -218,9 +220,7 @@ function get_sets()
         feet		=	"Aya. Gambieras +2",
         neck		=	"Twilight Torque",
         waist		=	"Flume Belt",
-        left_ear	=	"Etiolation Earring",
-        right_ear	=	"Ethereal Earring",
-        left_ring	=	"Stikini Ring +1",
+        left_ring	=	"Stikini Ring",
         right_ring	=	"Defending Ring",
         back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
     }
@@ -229,10 +229,10 @@ function get_sets()
     sets.me.idle.dt = set_combine(sets.me.idle.refresh,{
         neck		=	"Twilight Torque",
         head		=	"Malignance Chapeau",
-        body		=	"Ayanmo Corazza +2",
+        body		=	"Malignance Tabard",
         hands		=	"Malignance Gloves",
         legs		=	RELIC.Legs,
-        feet		=	"Aya. Gambieras +2",
+        feet		=	"Malignance Boots",
 		left_ring	=	{ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
         right_ring	=	"Defending Ring",
     })  
@@ -253,12 +253,12 @@ function get_sets()
     sets.me.melee.normaldw = set_combine(sets.me.idle.refresh, {
 		ammo		=	"Ginsen",
 		head		=	"Malignance Chapeau",
-		body		=	"Ayanmo Corazza +2",
+		body		=	"Malignance Tabard",
 		hands		=	"Aya. Manopolas +2",
 		legs		=	"Aya. Cosciales +2",
 		feet		=	{ name="Taeon Boots", augments={'Attack+15','"Dual Wield"+5','Sklchn.dmg.+3%',}},
 		neck		=	"Clotharius Torque",
-		waist		=	"Windbuffet Belt",
+		waist		=	"Sailfi belt +1",
 		left_ear	=	"Dedition Earring",
 		right_ear	=	"Sherida Earring",
 		left_ring	=	"Petrov Ring",
@@ -269,16 +269,16 @@ function get_sets()
 	sets.me.melee.stpdw = set_combine(sets.me.idle.refresh, {
 		ammo		=	"Ginsen",
 		head		=	"Malignance Chapeau",
-		body		=	"Ayanmo Corazza +2",
+		body		=	"Malignance Tabard",
 		hands		=	"Malignance Gloves",
-		legs		=	"Aya. Cosciales +2",
-		feet		=	{ name="Taeon Boots", augments={'Attack+15','"Dual Wield"+5','Sklchn.dmg.+3%',}},
+		legs		=	"Carmine Cuisses +1",
+		feet		=	"Malignance Boots",
 		neck		=	"Anu Torque",
-		waist		=	"Windbuffet Belt",
-		left_ear	=	"Sherida Earring",
-		right_ear	=	"Dedition Earring",
+		waist		=	"Sailfi belt +1",
+		left_ear	=	"Suppanomimi",
+		right_ear	=	"Sherida Earring",
 		left_ring	=	"Petrov Ring",
-		right_ring	=	"Rajas Ring",
+		right_ring	=	"Hetairoi Ring",
 		back		=	{ name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
 	})
 	
@@ -289,11 +289,11 @@ function get_sets()
     sets.me.melee.dtdw = set_combine(sets.me.melee.normaldw,{
         neck		=	"Twilight Torque",
         head		=	"Malignance Chapeau",
-        body		=	"Ayanmo Corazza +2",
+        body		=	"Malignance Tabard",
         hands		=	"Malignance Gloves",
         legs		=	"Ayanmo Cosciales +2",
-        feet		=	"Aya. Gambieras +2",
-		left_ring	=	"Ayanmo Ring",
+        feet		=	"Malignance Boots",
+		left_ring	=	{ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
         right_ring	=	"Defending Ring",
     })
 	
@@ -325,13 +325,13 @@ function get_sets()
 	------------------------------------------------------------------------------------------------------
     sets.me["Savage Blade"] = {
 		ammo		=	"Ginsen",
-		head		=	"Jhakri Coronal +2",
-		body		=	"Jhakri Robe +2",
+		head		=	RELIC.Head,
+		body		=	RELIC.Body,
 		hands		=	"Jhakri Cuffs +2",
-		legs		=	"Jhakri Slops +2",
+		legs		=	RELIC.Legs,
 		feet		=	"Jhakri Pigaches +2",
 		neck		=	"Fotia Gorget",
-		waist		=	"Fotia Belt",
+		waist		=	"Sailfi Belt +1",
 		left_ear	=	{ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		right_ear	=	"Brutal Earring",
 		left_ring	=	"Petrov Ring",
@@ -339,18 +339,17 @@ function get_sets()
 		back={ name	=	"Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 	}
     sets.me["Black Halo"] = {
-        ammo        =   "Regal Gem",
         head        =   RELIC.Head,
         body        =   RELIC.Body,
         hands       =   AF.Hands,
         legs        =   RELIC.Legs,
         feet        =   "Jhakri Pigaches +2",
-        neck        =   "Dls. Torque +2",
-        waist       =   "Prosilio Belt +1",
+        neck        =   "Duelist's Torque",
+        waist       =   "Sailfi Belt +1",
         left_ear    =   { name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
         right_ear   =   "Ishvara Earring",
-        left_ring   =   "Stikini Ring +1",
-        right_ring  =   "Rufescent Ring",
+        left_ring   =   "Stikini Ring",
+        right_ring  =   "Metamorph Ring +1",
         back        =   RDMCape.MACC,
     }
     sets.me["Requiescat"] = {
@@ -387,15 +386,15 @@ function get_sets()
     sets.me["Sanguine Blade"] = {
 		ammo		=	"Ghastly Tathlum +1",
 		head		=	"Pixie Hairpin +1",
-		body		=	"Jhakri Robe +2",
+		body		=	"Merlinic Jubbah",
 		hands		=	"Jhakri Cuffs +2",
 		legs		=	{ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+30','Enmity-4','INT+10','Mag. Acc.+15',}},
 		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Eddy Necklace",
-		waist		=	"Refoccilation Stone",
+		neck		=	"Baetyl Pendant",
+		waist		=	"Sacro Cord",
 		left_ear	=	"Friomisi Earring",
 		right_ear	=	"Malignance Earring",
-		left_ring	=	"Acumen Ring",
+		left_ring	=	"Archon Ring",
 		right_ring	=	"Strendu Ring",
 		back		=	{ name="Sucellos's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 	}
@@ -407,8 +406,8 @@ function get_sets()
 		hands		=	"Jhakri Cuffs +2",
 		legs		=	{ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+30','Enmity-4','INT+10','Mag. Acc.+15',}},
 		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Eddy Necklace",
-		waist		=	"Refoccilation Stone",
+		neck		=	"Baetyl Pendant",
+		waist		=	"Sacro Cord",
 		left_ear	=	"Friomisi Earring",
 		right_ear	=	"Malignance Earring",
 		left_ring	=	"Acumen Ring",
@@ -418,13 +417,12 @@ function get_sets()
 	
     sets.me["Seraph Blade"] = {
 		ammo		=	"Ghastly Tathlum +1",
-		head		=	{ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +9','CHR+5','"Mag.Atk.Bns."+14',}},
-		body		=	"Jhakri Robe +2",
+		body		=	"Cohort Cloak +1",
 		hands		=	"Jhakri Cuffs +2",
 		legs		=	{ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+30','Enmity-4','INT+10','Mag. Acc.+15',}},
 		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Eddy Necklace",
-		waist		=	"Refoccilation Stone",
+		neck		=	"Baetyl Pendant",
+		waist		=	"Sacro Cord",
 		left_ear	=	"Friomisi Earring",
 		right_ear	=	"Malignance Earring",
 		left_ring	=	"Acumen Ring",
@@ -433,10 +431,10 @@ function get_sets()
 	}
     sets.me["Empyreal Arrow"] = {
 		head		=	"Malignance Chapeau",
-		body		=	"Jhakri Robe +2",
+		body		=	"Malignance Tabard",
 		hands		=	"Malignance Gloves",
 		legs		=	"Jhakri Slops +2",
-		feet		=	"Jhakri Pigaches +2",
+		feet		=	"Malignance Boots",
 		neck		=	"Fotia Gorget",
 		waist		=	"Fotia Belt",
 		left_ear	=	{ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
@@ -465,8 +463,7 @@ function get_sets()
     sets.precast.casting = {
         main		=	"Crocea Mors",		--20
 		head		=	"Atro. Chapeau +2", -- 14
-		body		=	{ name="Vitiation Tabard", augments={'Enhances "Chainspell" effect',}}, --12
-		hands		=	{ name="Chironic Gloves", augments={'Spell interruption rate down -10%','CHR+6','Mag. Acc.+13','"Mag.Atk.Bns."+11',}}, --30 sird
+		body		=	{ name="Vitiation Tabard +3", augments={'Enhances "Chainspell" effect',}}, --12
 		legs		=	{ name="Psycloth Lappas", augments={'MP+80','Mag. Acc.+15','"Fast Cast"+7',}}, --7
 		feet		=	{ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+21','"Fast Cast"+6','CHR+8','Mag. Acc.+6',}}, --11
         waist		=	"Witful Belt",          --3
@@ -521,33 +518,33 @@ function get_sets()
     -- Make sure you have a non weather obi in this set. Helix get bonus naturally no need Obi.	
     sets.midcast.DarkHelix = {
 		head		=	"Pixie Hairpin +1",
-		waist		=	"Refoccilation Stone",
+		waist		=	"Sacro Cord",
 		left_ring	=	"Archon Ring",
     }
     -- Make sure you have a non weather obi in this set. Helix get bonus naturally no need Obi.	
     sets.midcast.Helix = {
-		waist		=	"Refoccilation Stone",
+		waist		=	"Sacro Cord",
     }	
 
     -- Whatever you want to equip mid-cast as a catch all for all spells, and we'll overwrite later for individual spells
     sets.midcast.casting = {   
         main		=	"Maxentius",
         sub			=	"Ammurapi Shield",
-        ammo		=	"Pemphredo Tathlum",
+        ammo		=	"Ghastly Tathlum +1",
         --head		=	Merl.Head.ACC,
         --body		=	Amal.Body.A,
         --hands		=	Amal.Hands.D,
         --legs		=	Amal.Legs.A,
         --feet		=	Amal.Feet.A,
-        neck		=	"Dls. Torque",
-        waist		=	"Refoccilation Stone",
+        neck		=	"Duelist's Torque",
+        waist		=	"Sacro Cord",
         left_ear	=	"Friomisi Earring",
-        right_ear	=	"Enchntr. Earring +1",
+        right_ear	=	"Loquac. Earring",
         back		=	RDMCape.MACC,
-        right_ring	=	"Freke Ring",
+        right_ring	=	"Acumen Ring",
         left_ring	=	"Shiva Ring", 
     }
-
+	
     sets.midcast.nuking.normal = {
 		ammo="Ghastly Tathlum +1",
 		head={ name="Merlinic Hood", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','"Drain" and "Aspir" potency +9','CHR+5','"Mag.Atk.Bns."+14',}},
@@ -556,7 +553,7 @@ function get_sets()
 		legs="Ea Slops",
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','INT+9','"Mag.Atk.Bns."+10',}},
 		neck="Mizu. Kubikazari",
-		waist="Refoccilation Stone",
+		waist="Sacro Cord",
 		left_ear="Static Earring",
 		right_ear="Friomisi Earring",
 		left_ring="Acumen Ring",
@@ -571,7 +568,6 @@ function get_sets()
     sets.midcast.MB.normal = set_combine(sets.midcast.nuking.normal, {
         left_ring	=	"Mujin Band",
         neck		=	"Mizu. Kubikazari",
-        right_ring	=	"Locus Ring",
     })
 	
     sets.midcast.nuking.acc = {
@@ -582,7 +578,7 @@ function get_sets()
 		legs="Ea Slops",
 		feet={ name="Merlinic Crackows", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Magic burst dmg.+9%','INT+9','"Mag.Atk.Bns."+10',}},
 		neck="Mizu. Kubikazari",
-		waist="Refoccilation Stone",
+		waist="Sacro Cord",
 		left_ear="Static Earring",
 		right_ear="Friomisi Earring",
 		left_ring="Acumen Ring",
@@ -595,7 +591,6 @@ function get_sets()
     sets.midcast.MB.acc = set_combine(sets.midcast.nuking.acc, {
         left_ring	=	"Mujin Band",
         neck		=	"Mizu. Kubikazari",
-        right_ring	=	"Locus Ring",
     })	
 	
     -- Enfeebling
@@ -603,23 +598,28 @@ function get_sets()
 	sets.midcast.Enfeebling = {} -- leave Empty
 	--Type A-pure macc no potency mod
     sets.midcast.Enfeebling.macc = {
-		range		=	"Kaja Bow",
-		head		=	AF.Head,
-		body		=	AF.Body,
-		hands		=	{ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
-		legs		=	{ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
-		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Duelist's Torque",
-		waist		=	"Eschan Stone",
-		left_ear	=	"Malignance Earring",
-		right_ear	=	"Gwati Earring",
-		left_ring	=	"Weather. Ring",
-		right_ring	=	"Jhakri Ring",
-		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		main={ name="Crocea Mors", augments={'Path: C',}},
+		sub="Ammurapi Shield",
+		range="Kaja Bow",
+		head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands="Jhakri Cuffs +2",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+		feet={ name="Vitiation Boots +2", augments={'Immunobreak Chance',}},
+		neck={ name="Duelist's Torque", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Weather. Ring",
+		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 	
 	sets.midcast["Stun"] = set_combine(sets.midcast.Enfeebling.macc, {
-
+		head=AF.Head,
+		body=RELIC.Body,
+		neck="Voltsurge Torque",
+		feet =	{ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+21','"Fast Cast"+6','CHR+8','Mag. Acc.+6',}}, --11
 	})
 	
 	sets.midcast["Dia III"] = set_combine(sets.midcast.Enfeebling.macc, {
@@ -630,109 +630,126 @@ function get_sets()
 	
 	--Type B-potency from: Mnd & "Enfeeb Potency" gear
     sets.midcast.Enfeebling.mndpot = {
-		range		=	"Kaja Bow",
-		head		=	AF.Head,
-		body		=	AF.Body,
-		hands		=	{ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
-		legs		=	{ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
-		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Duelist's Torque",
-		waist		=	"Eschan Stone",
-		left_ear	=	"Malignance Earring",
-		right_ear	=	"Gwati Earring",
-		left_ring	=	"Weather. Ring",
-		right_ring	=	"Jhakri Ring",
-		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		main={ name="Crocea Mors", augments={'Path: C',}},
+		sub="Ammurapi Shield",
+		range="Kaja Bow",
+		head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands="Jhakri Cuffs +2",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+		feet={ name="Vitiation Boots +2", augments={'Immunobreak Chance',}},
+		neck={ name="Duelist's Torque", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Weather. Ring",
+		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 	
 	-- Type C-potency from: Int & "Enfeeb Potency" gear
     sets.midcast.Enfeebling.intpot = {
-		range		=	"Kaja Bow",
-		head		=	AF.Head,
-		body		=	AF.Body,
-		hands		=	{ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
-		legs		=	{ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
-		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Duelist's Torque",
-		waist		=	"Eschan Stone",
-		left_ear	=	"Malignance Earring",
-		right_ear	=	"Gwati Earring",
-		left_ring	=	"Weather. Ring",
-		right_ring	=	"Jhakri Ring",
-		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		main={ name="Crocea Mors", augments={'Path: C',}},
+		sub="Ammurapi Shield",
+		range="Kaja Bow",
+		head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands="Jhakri Cuffs +2",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+		feet={ name="Vitiation Boots +2", augments={'Immunobreak Chance',}},
+		neck={ name="Duelist's Torque", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Weather. Ring",
+		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 	
 	--Type D-potency from: Enfeeb Skill & "Enfeeb Potency" gear
     sets.midcast.Enfeebling.skillpot = {
-		range		=	"Kaja Bow",
-		head		=	AF.Head,
-		body		=	AF.Body,
-		hands		=	{ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
-		legs		=	{ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
-		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Duelist's Torque",
-		waist		=	"Eschan Stone",
-		left_ear	=	"Malignance Earring",
-		right_ear	=	"Gwati Earring",
-		left_ring	=	"Weather. Ring",
-		right_ring	=	"Jhakri Ring",
-		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		main={ name="Crocea Mors", augments={'Path: C',}},
+		sub="Ammurapi Shield",
+		range="Kaja Bow",
+		head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands="Jhakri Cuffs +2",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+		feet={ name="Vitiation Boots +2", augments={'Immunobreak Chance',}},
+		neck={ name="Duelist's Torque", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Weather. Ring",
+		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 	
 	-- Tpe E-potency from: Enfeeb skill, Mnd, & "Enfeeb Potency" gear
     sets.midcast.Enfeebling.skillmndpot = {
-		range		=	"Kaja Bow",
-		head		=	AF.Head,
-		body		=	AF.Body,
-		hands		=	{ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
-		legs		=	{ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
-		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Duelist's Torque",
-		waist		=	"Eschan Stone",
-		left_ear	=	"Malignance Earring",
-		right_ear	=	"Gwati Earring",
-		left_ring	=	"Weather. Ring",
-		right_ring	=	"Jhakri Ring",
-		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		main={ name="Crocea Mors", augments={'Path: C',}},
+		sub="Ammurapi Shield",
+		range="Kaja Bow",
+		head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+		body="Atrophy Tabard +3",
+		hands="Jhakri Cuffs +2",
+		legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+		feet={ name="Vitiation Boots +2", augments={'Immunobreak Chance',}},
+		neck={ name="Duelist's Torque", augments={'Path: A',}},
+		waist="Sacro Cord",
+		left_ear="Malignance Earring",
+		right_ear="Gwati Earring",
+		left_ring="Kishar Ring",
+		right_ring="Weather. Ring",
+		back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
 	}
 	
 	-- Type F-potency from "Enfeebling potency" gear only
     sets.midcast.Enfeebling.skillmndpot = {
-		range		=	"Kaja Bow",
-		head		=	AF.Head,
-		body		=	AF.Body,
-		hands		=	{ name="Chironic Gloves", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Cure" potency +5%','MND+11','Mag. Acc.+11',}},
-		legs		=	{ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
-		feet		=	{ name="Merlinic Crackows", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic Damage +12','Mag. Acc.+10','"Mag.Atk.Bns."+11',}},
-		neck		=	"Duelist's Torque",
-		waist		=	"Eschan Stone",
-		left_ear	=	"Malignance Earring",
-		right_ear	=	"Gwati Earring",
-		left_ring	=	"Weather. Ring",
-		right_ring	=	"Jhakri Ring",
-		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
-	}
+			main={ name="Crocea Mors", augments={'Path: C',}},
+			sub="Ammurapi Shield",
+			range="Kaja Bow",
+			head={ name="Viti. Chapeau +2", augments={'Enfeebling Magic duration','Magic Accuracy',}},
+			body="Atrophy Tabard +3",
+			hands="Jhakri Cuffs +2",
+			legs={ name="Chironic Hose", augments={'Mag. Acc.+24 "Mag.Atk.Bns."+24','Enmity-2','INT+10','Mag. Acc.+11',}},
+			feet={ name="Vitiation Boots +2", augments={'Immunobreak Chance',}},
+			neck={ name="Duelist's Torque", augments={'Path: A',}},
+			waist="Sacro Cord",
+			left_ear="Malignance Earring",
+			right_ear="Gwati Earring",
+			left_ring="Kishar Ring",
+			right_ring="Weather. Ring",
+			back={ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		}
 	
     -- Enhancing yourself 
     sets.midcast.enhancing.duration = {
+		sub			=	"Ammurapi Shield",
 		head		=	{ name="Telchine Cap", augments={'Mag. Evasion+12','"Elemental Siphon"+25','Enh. Mag. eff. dur. +7',}},
-		body		=	{ name="Telchine Chas.", augments={'Mag. Evasion+4','"Cure" spellcasting time -6%','Enh. Mag. eff. dur. +8',}},
+		body		=	RELIC.Body,
 		hands		=	AF.Hands,
 		legs		=	{ name="Telchine Braconi", augments={'"Mag.Atk.Bns."+10','"Elemental Siphon"+35','Enh. Mag. eff. dur. +9',}},
 		feet		=	EMPY.Feet,
 		neck		=	{ name="Duelist's Torque", augments={'Path: A',}},
 		back		=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		waist		= 	"Embla sash",
 	}
 	
 	
     -- For Potency spells like Temper and Enspells
     sets.midcast.enhancing.potency = set_combine(sets.midcast.enhancing.duration, {
+		head    =   "Umuthi Hat",
 		body	=	RELIC.Body,
 		hands	=	RELIC.Hands,
 		legs	=	AF.Legs,
 		feet	=	EMPY.Feet,
 		neck	=	"Incanter's Torque",
-		back	=	{ name="Sucellos's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+6','"Mag.Atk.Bns."+10','Damage taken-5%',}},
+		back	=	"Ghostfyre Cape",
+		-- waist 	= 	"Cascade Belt",
+		left_ear = "Andoaa Earring",
+		left_ring = "Stikini Ring",
+		right_ring = "Stikini Ring",
 	}) 
 
     -- This is used when casting under Composure but enhancing someone else other than yourself. 
@@ -768,7 +785,6 @@ function get_sets()
 	})
 	
     sets.midcast["Drain"] = set_combine(sets.midcast.nuking, {
-        main		=	"Rubicundity",
 		head		=	"Pixie Hairpin +1",
 		neck		=	"Erra Pendant",
     })
@@ -783,7 +799,7 @@ function get_sets()
 		head		=	{ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
 		body		=	{ name="Vanya Robe", augments={'MP+49','"Cure" potency +7%','Enmity-5',}},
 		hands		=	{ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -2%',}},
-		legs		=	"Atrophy Tights +1",
+		legs		=	"Atrophy Tights +2",
 		feet		=	{ name="Vanya Clogs", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
 		neck		=	"Incanter's Torque",
 		left_ear	=	"Mendi. Earring",
@@ -795,7 +811,6 @@ function get_sets()
     
 	sets.midcast.cure.weather = set_combine(sets.midcast.cure.normal,{
 		main		=	"Chatoyant Staff",
-		sub			=	"Enki Strap",
 		waist		=	"Hachirin-no-Obi",
     })
 

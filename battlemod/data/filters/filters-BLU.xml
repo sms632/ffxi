@@ -175,7 +175,7 @@
             <damage>false</damage>
             <healing>false</healing>
             <items>false</items>
-            <melee>false</melee>
+            <melee>true</melee>
             <misses>false</misses>
             <ranged>false</ranged>
             <readies>false</readies>

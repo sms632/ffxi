@@ -130,7 +130,7 @@ local function trade_cells()
         local remaining = {
             cobalt = 1,
             rubicund = 1,
-            phase = 3,
+            phase = 2,
         }
         local idx = 1
         local n = 0
@@ -209,7 +209,7 @@ local function start_fight(id, data)
     if (id == 0x5b) and conditions['rift'] then
         log('start fight')
         local p = packets.parse('outgoing', data)
-        p['Option Index'] = 0x31
+        p['Option Index'] = 0x21
         p['_unknown1'] = 0
         conditions['rift'] = false
         conditions['escape'] = false

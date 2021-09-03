@@ -1,2 +1,3 @@
-findAll\data\
-GearSwap\data\export\
+findAll/data/*
+GearSwap/data/export/*
+XIPivot/*
