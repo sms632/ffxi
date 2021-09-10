@@ -757,7 +757,7 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.PetPDTAxe = {}
-	sets.weapons.DualWeapons = {main ="Dolichenus", sub="Ternion Dagger +1"}
+	sets.weapons.DualWeapons = {main ="Dolichenus", sub="Agwu's Axe"}
 
 
 -------------------------------------------------------------------------------------------------------------------

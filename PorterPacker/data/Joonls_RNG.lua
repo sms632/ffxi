@@ -1,0 +1,15 @@
+return {
+	"Meg. Cuirie +2",
+    "Orion Bracers +2",
+    "Arc. Braccae +3",
+    "Orion Braccae +1",
+    "Arcadian Socks +3",
+    "Orion Beret +3",
+    "Arcadian Beret +3",
+    "Arc. Jerkin +3",
+    "Amini Caban +1",
+    "Orion Socks",
+    "Meg. Gloves +2",
+    "Meg. Chausses +2",
+	"Meg. Jam. +2",
+}

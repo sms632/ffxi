@@ -1,0 +1,17 @@
+return {
+    "Meg. Cuirie +2",
+    "Chasseur's Frac +1",
+    "Laksa. Frac +2",
+    "Lanun Frac +3",
+    "Meg. Gloves +2",
+    "Meg. Chausses +2",
+	"Meg. Jam. +2",
+    "Lanun Bottes +3",
+    "Chass. Tricorne +1",
+    "Lanun Tricorne +1",
+    "Lanun Gants +3",
+    "Laksa. Trews +2",
+    "Chas. Culottes +1",
+    "Chass. Bottes +1",
+    "Chasseur's Gants +1",
+}

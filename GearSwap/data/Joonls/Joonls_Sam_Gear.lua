@@ -34,11 +34,11 @@ function init_gear_sets()
     
     -- Precast Sets
     -- Precast sets to enhance JAs
-    sets.precast.JA.Meditate = {head="Wakido Kabuto +3",hands="Sakonji Kote +1",back=gear.ws_jse_back}
-    sets.precast.JA['Warding Circle'] = {head="Wakido Kabuto +3"}
-    sets.precast.JA['Blade Bash'] = {hands="Sakonji Kote +1"}
-	sets.precast.JA['Sekkanoki'] = {hands="Kasuga Kote +1"}
-	sets.precast.JA['Sengikori'] = {feet="Kas. Sune-Ate +1"}
+    sets.precast.JA.Meditate = {back=gear.ws_jse_back}
+    sets.precast.JA['Warding Circle'] = {}
+    sets.precast.JA['Blade Bash'] = {}
+	sets.precast.JA['Sekkanoki'] = {}
+	sets.precast.JA['Sengikori'] = {}
 	
     sets.precast.Step = {}
     sets.precast.JA['Violent Flourish'] = {}
@@ -64,7 +64,7 @@ function init_gear_sets()
 		body={ name="Valorous Mail", augments={'Accuracy+3 Attack+3','Weapon skill damage +3%','STR+12',}},
 		hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','INT+4',}},
 		legs="Wakido Haidate +3",
-		feet={ name="Valorous Greaves", augments={'Accuracy+9','Weapon skill damage +3%','STR+12','Attack+4',}},
+		feet={ name="Valorous Greaves", augments={'Weapon Skill Acc.+5','STR+6','Weapon skill damage +5%','Accuracy+13 Attack+13',}},
 		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Thrud Earring",
@@ -186,7 +186,7 @@ function init_gear_sets()
 		body={ name="Valorous Mail", augments={'Accuracy+3 Attack+3','Weapon skill damage +3%','STR+12',}},
 		hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +4%','INT+4',}},
 		legs="Wakido Haidate +3",
-		feet={ name="Valorous Greaves", augments={'Accuracy+9','Weapon skill damage +3%','STR+12','Attack+4',}},
+		feet={ name="Valorous Greaves", augments={'Weapon Skill Acc.+5','STR+6','Weapon skill damage +5%','Accuracy+13 Attack+13',}},
 		neck={ name="Sam. Nodowa +1", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Thrud Earring",
@@ -198,17 +198,17 @@ function init_gear_sets()
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {ear1="Thrud Earring", ear2="Lugra Earring +1",}
-	sets.AccMaxTP = {ear1="Mache Earring", ear2="Telos Earring"}
-	sets.AccDayMaxTPWSEars = {ear1="Mache Earring", ear2="Telos Earring"}
+	sets.AccMaxTP = {ear1="Mache Earring", ear2="Crep. Earring"}
+	sets.AccDayMaxTPWSEars = {ear1="Mache Earring", ear2="Crep. Earring"}
 	sets.DayMaxTPWSEars = {ear1="Thrud Earring", ear2="Brutal Earring",}
-	sets.AccDayWSEars = {ear1="Mache Earring", ear2="Telos Earring"}
+	sets.AccDayWSEars = {ear1="Mache Earring", ear2="Crep. Earring"}
 	sets.DayWSEars = {ear1="Thrud Earring", ear2="Moonshade Earring",}
 	
     -- Midcast Sets
     sets.midcast.FastRecast = {}
 		
     -- Specific spells
-    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {back="Mujin Mantle"})
+    sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {})
 	
 		
     -- Ranged gear
@@ -240,7 +240,7 @@ function init_gear_sets()
 	
 	sets.Kiting = {feet="Danzo Sune-ate"}
 
-    sets.Reraise = {head="Twilight Helm", body="Twilight Mail"}
+    sets.Reraise = {}
 	
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {
 		head="Wh. Rarab Cap +1",
@@ -250,33 +250,37 @@ function init_gear_sets()
 	sets.Skillchain = {}
 	
     sets.idle = {
-		ammo="Staunch Tathlum +1",
-        head=gear.valorous_wsd_head,
-		neck="Twilight Torque",
-        body="Hiza. Haramaki +2",
-		hands="Sakonji Kote +1",
-		ring1="Defending Ring",
-		ring2="Dark Ring",
-        back="Moonbeam Cape",
+		ammo="Ginsen",
+		head="Nyame Helm",
+		body="Sacro Breastplate",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
 		waist="Flume Belt",
-		legs="Flamma Dirs +2",
-		feet="Flam. Gambieras +2",
+		left_ear="Hearty Earring",
+		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		left_ring="Defending Ring",
+		right_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+		back="Moonbeam Cape",
 	}
 		
     sets.idle.Reraise = set_combine(sets.idle, sets.Reraise)
 
     sets.idle.Weak = {
-		ammo="Staunch Tathlum +1",
-        head=gear.valorous_wsd_head,
-		neck="Twilight Torque",
-        body="Hiza. Haramaki +2",
-		hands="Sakonji Kote +1",
-		ring1="Defending Ring",
-		ring2="Dark Ring",
-        back="Moonbeam Cape",
+		ammo="Ginsen",
+		head="Nyame Helm",
+		body="Sacro Breastplate",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
+		neck={ name="Bathy Choker +1", augments={'Path: A',}},
 		waist="Flume Belt",
-		legs="Flamma Dirs +2",
-		feet="Flam. Gambieras +2",
+		left_ear="Hearty Earring",
+		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		left_ring="Defending Ring",
+		right_ring={ name="Dark Ring", augments={'Enemy crit. hit rate -2','Magic dmg. taken -4%','Phys. dmg. taken -6%',}},
+		back="Moonbeam Cape",
 	}
 		
     sets.idle.Weak.Reraise = set_combine(sets.idle.Weak, sets.Reraise)
@@ -300,7 +304,7 @@ function init_gear_sets()
 		ring1="Defending Ring",
 		ring2="Dark Ring",
         back="Moonbeam Cape",
-		waist="Flume Belt"
+		waist="Carrier's Sash"
 	}
 		
 	sets.defense.MDTReraise = set_combine(sets.defense.MDT, sets.Reraise)
@@ -310,7 +314,7 @@ function init_gear_sets()
 		ring1="Defending Ring",
 		ring2="Dark Ring",
         back="Moonbeam Cape",
-		waist="Flume Belt"
+		waist="Carrier's Sash"
 	}
 
     -- Engaged sets
@@ -427,14 +431,14 @@ function init_gear_sets()
 	sets.weapons.Bow = {main="Norifusa +1", sub="Utu Grip", range="Kaja Bow", ammo="Chapuli Arrow"}
 	
 	-- Buff sets
-	sets.Cure_Received = {legs="Flamma Dirs +2"}
+	sets.Cure_Received = {legs="Flamma Dirs +1"}
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
-	sets.buff.Sleep = {neck="Vim Torque +1"}
+	sets.buff.Sleep = {neck="Vim Torque"}
 	sets.buff.Hasso = {hands="Wakido Kote +3"}
 	sets.buff['Third Eye'] = {} --legs="Sakonji Haidate +3"
-    sets.buff.Sekkanoki = {hands="Kasuga Kote +1"}
-    sets.buff.Sengikori = {feet="Kas. Sune-Ate +1"}
-    sets.buff['Meikyo Shisui'] = {feet="Sak. Sune-Ate +1"}
+    sets.buff.Sekkanoki = {}
+    sets.buff.Sengikori = {}
+    sets.buff['Meikyo Shisui'] = {}
 end
 
 -- Select default macro book on initial load or subjob change.

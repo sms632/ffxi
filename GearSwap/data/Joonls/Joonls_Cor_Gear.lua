@@ -59,7 +59,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
 	sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +1"}
-    sets.precast.JA['Snake Eye'] = {legs="Lanun Trews"}
+    sets.precast.JA['Snake Eye'] = {}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +3"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.FoldDoubleBust = {hands="Lanun Gants +3"}
@@ -71,7 +71,7 @@ function init_gear_sets()
 		-- neck="Regal Necklace",
 		-- ear1="Etiolation Earring",
 		-- ear2="Sanare Earring",
-        body="Lanun Frac +1",
+        body="Lanun Frac +3",
 		hands="Chasseur's Gants +1",
 		ring1="Barataria Ring",
 		ring2="Luzaf's Ring",
@@ -101,7 +101,7 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",
 		left_ring="Dingir Ring",
-		right_ring="Shiva Ring",
+		right_ring="Acumen Ring",
 		back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
 		
@@ -117,7 +117,7 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",
 		left_ring="Dingir Ring",
-		right_ring="Shiva Ring",
+		right_ring="Acumen Ring",
 		back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
 	
@@ -132,7 +132,7 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",
 		left_ring="Dingir Ring",
-		right_ring="Shiva Ring",
+		right_ring="Acumen Ring",
 		back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
 
@@ -148,16 +148,16 @@ function init_gear_sets()
 		left_ear="Friomisi Earring",
 		right_ear="Hecate's Earring",
 		left_ring="Dingir Ring",
-		right_ring="Shiva Ring",
+		right_ring="Acumen Ring",
 		back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','"Store TP"+10','Phys. dmg. taken-10%',}},
 	}
 
     sets.precast.CorsairShot['Dark Shot'] = set_combine(sets.precast.CorsairShot['Light Shot'], {feet="Chass. Bottes +1"})
 
     -- Waltz set (chr and vit)
-    sets.precast.Waltz = set_combine(sets.defense.PDT, {head="Mummu Bonnet +1", body="Passion Jacket"})
+    sets.precast.Waltz = set_combine(sets.defense.PDT, {body="Passion Jacket"})
 		
-	sets.Self_Waltz = set_combine(sets.defense.PDT, {head="Mummu Bonnet +1", body="Passion Jacket"})
+	sets.Self_Waltz = set_combine(sets.defense.PDT, {body="Passion Jacket"})
         
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -166,7 +166,7 @@ function init_gear_sets()
     
     sets.precast.FC = {
 		head={ name="Herculean Helm", augments={'"Fast Cast"+2','"Drain" and "Aspir" potency +1','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+12 "Mag.Atk.Bns."+12',}},
-		body={ name="Taeon Tabard", augments={'Accuracy+9','"Triple Atk."+1','"Snapshot"+4',}},
+		body={ name="Taeon Tabard", augments={'Accuracy+9','"Snapshot"+4','"Snapshot"+4',}},
 		hands="Leyline Gloves",
 		legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 		feet="Malignance Boots",
@@ -208,17 +208,17 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-		head={ name="Herculean Helm", augments={'Weapon skill damage +3%','STR+8','Attack+13',}},
+		head={ name="Herculean Helm", augments={'Rng.Acc.+22','Pet: "Regen"+2','Weapon skill damage +7%','Accuracy+9 Attack+9','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
 		body="Laksa. Frac +2",
 		hands="Meg. Gloves +2",
-		legs={ name="Herculean Trousers", augments={'Accuracy+20 Attack+20','Weapon skill damage +3%','Accuracy+6','Attack+14',}},
+		legs={ name="Herculean Trousers", augments={'"Dbl.Atk."+2','CHR+9','Weapon skill damage +5%','Accuracy+2 Attack+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
 		feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
 		right_ear="Ishvara Earring",
-		right_ring="Rajas Ring",
 		left_ring="Petrov Ring",
+		right_ring="Rajas Ring",
 		back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 		
@@ -226,7 +226,7 @@ function init_gear_sets()
         head="Malignance Chapeau",
 		body="Laksa. Frac +2",
 		hands="Meg. Gloves +2",
-		legs={ name="Herculean Trousers", augments={'Accuracy+20 Attack+20','Weapon skill damage +3%','Accuracy+6','Attack+14',}},
+		legs={ name="Herculean Trousers", augments={'"Dbl.Atk."+2','CHR+9','Weapon skill damage +5%','Accuracy+2 Attack+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
 		feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
@@ -241,7 +241,7 @@ function init_gear_sets()
         head="Malignance Chapeau",
 		body="Laksa. Frac +2",
 		hands="Meg. Gloves +2",
-		legs={ name="Herculean Trousers", augments={'Accuracy+20 Attack+20','Weapon skill damage +3%','Accuracy+6','Attack+14',}},
+		legs={ name="Herculean Trousers", augments={'"Dbl.Atk."+2','CHR+9','Weapon skill damage +5%','Accuracy+2 Attack+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
 		feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
@@ -255,13 +255,13 @@ function init_gear_sets()
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 
 	sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
-		head={ name="Herculean Helm", augments={'Weapon skill damage +3%','STR+8','Attack+13',}},
+		head={ name="Herculean Helm", augments={'Rng.Acc.+22','Pet: "Regen"+2','Weapon skill damage +7%','Accuracy+9 Attack+9','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
 		body="Laksa. Frac +2",
 		hands="Meg. Gloves +2",
-		legs={ name="Herculean Trousers", augments={'Accuracy+20 Attack+20','Weapon skill damage +3%','Accuracy+6','Attack+14',}},
+		legs={ name="Herculean Trousers", augments={'"Dbl.Atk."+2','CHR+9','Weapon skill damage +5%','Accuracy+2 Attack+2','Mag. Acc.+11 "Mag.Atk.Bns."+11',}},
 		feet={ name="Lanun Bottes +3", augments={'Enhances "Wild Card" effect',}},
 		neck="Fotia Gorget",
-		waist="Prosilio Belt",
+		waist="Sailfi Belt +1",
 		left_ring="Metamorph Ring +1",
 	})
 
@@ -271,7 +271,7 @@ function init_gear_sets()
 	
     sets.precast.WS['Last Stand'] = {
 		ammo=gear.WSbullet,
-		head={ name="Herculean Helm", augments={'Weapon skill damage +3%','STR+8','Attack+13',}},
+		head={ name="Herculean Helm", augments={'Rng.Acc.+22','Pet: "Regen"+2','Weapon skill damage +7%','Accuracy+9 Attack+9','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
 		body="Laksa. Frac +2",
 		hands="Meg. Gloves +2",
 		legs="Meg. Chausses +2",
@@ -330,7 +330,7 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'] = {
 		ammo=gear.MAbullet,
-        head={ name="Herculean Helm", augments={'"Mag.Atk.Bns."+21','Weapon skill damage +3%','MND+2','Mag. Acc.+5',}},
+        head={ name="Herculean Helm", augments={'Rng.Acc.+22','Pet: "Regen"+2','Weapon skill damage +7%','Accuracy+9 Attack+9','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
 		body="Lanun Frac +3",
 		hands="Meg. Gloves +2",
 		legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+29','Weapon skill damage +2%','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
@@ -346,7 +346,7 @@ function init_gear_sets()
 
     sets.precast.WS['Wildfire'] = {
 		ammo=gear.MAbullet,
-        head={ name="Herculean Helm", augments={'"Mag.Atk.Bns."+21','Weapon skill damage +3%','MND+2','Mag. Acc.+5',}},
+        head={ name="Herculean Helm", augments={'Rng.Acc.+22','Pet: "Regen"+2','Weapon skill damage +7%','Accuracy+9 Attack+9','Mag. Acc.+2 "Mag.Atk.Bns."+2',}},
 		neck="Baetyl Pendant",
 		body="Lanun Frac +3",
 		hands="Meg. Gloves +2",
@@ -365,10 +365,7 @@ function init_gear_sets()
     sets.precast.WS['Hot Shot'].Acc = sets.precast.WS['Wildfire'].Acc
 		
 		--Because omen skillchains.
-    sets.precast.WS['Burning Blade'] = {ammo=gear.RAbullet,
-        head="Meghanada Visor +2",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Sanare Earring",
-        body="Meg. Cuirie +2",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Meg. Chausses +2",feet="Meg. Jam. +2"}
+    sets.precast.WS['Burning Blade'] = {}
 
 	-- Swap to these on Moonshade using WS if at 3000 TP
 	sets.MaxTP = {}
@@ -477,7 +474,7 @@ function init_gear_sets()
 		hands="Malignance Gloves",
 		body="Malignance Tabard",
 		legs="Meg. Chausses +2",
-		feet={ name="Herculean Boots", augments={'Spell interruption rate down -6%','"Mag.Atk.Bns."+5','Damage taken-3%','Accuracy+10 Attack+10','Mag. Acc.+18 "Mag.Atk.Bns."+18',}},
+		feet="Malignance boots",
 		neck="Twilight Torque",
 		waist="Flume Belt",
 		left_ear="Static Earring",
@@ -538,12 +535,11 @@ function init_gear_sets()
 	
 	sets.TreasureHunter = {
 		head={ name="Herculean Helm", augments={'"Fast Cast"+2','"Drain" and "Aspir" potency +1','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+12 "Mag.Atk.Bns."+12',}},
-		legs={ name="Herculean Trousers", augments={'Enmity+1','"Blood Pact" ability delay -2','"Treasure Hunter"+1',}},
-		feet={ name="Herculean Boots", augments={'AGI+1','Attack+14','"Treasure Hunter"+1','Accuracy+15 Attack+15',}},
+		feet={ name="Herculean Boots", augments={'STR+10','Attack+8','"Treasure Hunter"+2','Accuracy+16 Attack+16','Mag. Acc.+17 "Mag.Atk.Bns."+17',}},
 	}
 
     sets.Kiting = {legs="Carmine Cuisses +1"}
-	sets.DWMax = {ear1="Dudgeon Earring",ear2="Heartseeker Earring",body="Adhemar Jacket +1",hands="Floral Gauntlets",waist="Reiki Yotai"}
+	sets.DWMax = {body="Adhemar Jacket +1"}
 
 	-- Weapons sets
 	sets.weapons.Default = {main="Rostam",sub="Demers. Degen +1",range="Fomalhaut"}
@@ -666,7 +662,7 @@ function init_gear_sets()
 		legs="Meg. Chausses +2",
 		feet="Malignance Boots",
 		neck="Clotharius Torque",
-		waist="Windbuffet Belt",
+		waist="Sailfi Belt +1",
 		left_ear="Cessance Earring",
 		right_ear="Dedition Earring",
 		left_ring="Epona's Ring",
@@ -681,7 +677,7 @@ function init_gear_sets()
 		legs="Meg. Chausses +2",
 		feet="Malignance Boots",
 		neck="Clotharius Torque",
-		waist="Windbuffet Belt",
+		waist="Sailfi Belt +1",
 		left_ear="Suppanomimi",
 		right_ear="Dedition Earring",
 		left_ring="Epona's Ring",
